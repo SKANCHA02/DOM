@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const heartBtn = item.querySelector('.heart-btn');
         const quantityInput = item.querySelector('.quantity-input');
 
-        // Handle the "+" button click
+        
         plusBtn.addEventListener('click', () => {
             quantityInput.value = parseInt(quantityInput.value) + 1;
             updateTotal();
         });
 
-        // Handle the "-" button click
+        
         minusBtn.addEventListener('click', () => {
             if (parseInt(quantityInput.value) > 0) {
                 quantityInput.value = parseInt(quantityInput.value) - 1;
@@ -33,18 +33,18 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Handle the delete button
+        
         deleteBtn.addEventListener('click', () => {
             item.remove();
             updateTotal();
         });
 
-        // Handle the heart button (like functionality)
+        
         heartBtn.addEventListener('click', () => {
             heartBtn.classList.toggle('liked');
         });
     });
 
-    // Update the total price on initial load (set it to $0)
+   
     updateTotal();
 });
