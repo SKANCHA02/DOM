@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="./dom2.css">
+</head>
+
+<!--BODY-->
+
+<body>
+
+  <div class="container">
+    <h1>Your Shopping Cart</h1>
+
+    <div class="cart-item">
+      <div class="item-info">
+        <img src="./images.jpeg" alt="Product 1" class="product-image">
+        <div>
+          <h3>T-SHIRT</h3>
+          <p class="item-price">120.00DT</p>
+        </div>
+      </div>
+      <div class="quantity-controls">
+        <button class="minus-btn">-</button>
+        <input type="text" class="quantity-input" value="0" readonly>
+        <button class="plus-btn">+</button>
+      </div>
+      <button class="delete-btn">Remove</button>
+      <button class="heart-btn"><img src="./2032606.svg" alt="herat" width="30px"></button>
+    </div>
+
+    <div class="cart-item">
+      <div class="item-info">
+        <img src="./thumbnail.jpg" alt="Product 2" class="product-image">
+        <div>
+          <h3>JEANS</h3>
+          <p class="item-price">150.00DT</p>
+        </div>
+      </div>
+      <div class="quantity-controls">
+        <button class="minus-btn">-</button>
+        <input type="text" class="quantity-input" value="0" readonly>
+        <button class="plus-btn">+</button>
+      </div>
+      <button class="delete-btn">Remove</button>
+      <button class="heart-btn"><img src="./2032606.svg" alt="herat" width="30px"></button>
+    </div>
+
+    <div class="total">
+      <h2>Total: <span id="total-price">0.00DT</span></h2>
+    </div>
+  </div>
+      <script src="./dom2.js"></script>
+    </body>
+    </html>
+    
+</body>
+</html>
